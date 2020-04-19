@@ -30,3 +30,8 @@ def fpic(event: MySignalEvent) -> str:
         pic8 = pic8[-1:] + pic8[:-1]
         time.sleep(0.8)
     return "ok"
+
+@dp.my_signal_event_handle('луна', 'л')
+def fpic(event: MySignalEvent) -> str:
+    picl = ['🌕🌗🌑🌑🌑🌑🌑🌓🌕', '🌕🌗🌑🌑🌑🌑🌑🌓🌕', '🌕🌗🌑🌑🌑🌑🌑🌓🌕', '🌕🌗🌑🌑🌑🌑🌑🌓🌕',
+      '🌕🌗🌑🌑🌑🌑🌑🌓🌕','🌕🌗🌑🌑🌑🌑🌑🌓🌕', '🌕🌗🌑🌑🌑🌑🌑🌓🌕', '🌕🌗🌑🌑🌑🌑🌑🌓🌕']
