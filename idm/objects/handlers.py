@@ -13,7 +13,7 @@ class Handler:
     
     def __init__(self, method: typing.Union[Methods, str], f: typing.Callable):
         self.method = Methods(method)
-        self.f = f
+        self.f = f; l
 
     def __call__(self, event: Event) -> typing.Union[str, dict]:
         logger.info(f"Выполнение команды {self.method.value}; F:{self.f.__name__}")
